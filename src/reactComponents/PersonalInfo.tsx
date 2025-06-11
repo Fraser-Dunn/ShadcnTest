@@ -5,9 +5,9 @@ const PersonalInfo = () => {
    return (
       <>
          {/* Container */}
-         <div className="flex h-fit">
-            <div className="flex flex-col py-6 pl-8 h-fit w-auto">
-               <div className="flex bg-[#171717] rounded-bl-[12px] rounded-tl-[12px]">
+         <div className="flex h-fit border-1 border-destructive-foreground">
+            <div className="flex flex-col py-6 h-fit w-auto max-w-[240px] items-center mt-6 ">
+               <div className="flex rounded-bl-[12px] rounded-tl-[12px] ">
                   <div className="w-fit h-fit p-4 flex flex-col items-center">
                      <img
                         className="max-h-[130px] max-w-[130px] object-contain"
@@ -26,12 +26,12 @@ const PersonalInfo = () => {
                </div>
             </div>
 
-            <div className="flex flex-col py-6">
-               <div className="flex flex-col text-center bg-[#171717] border-l-2 rounded-tr-[12px] rounded-br-[12px] p-4 text-white h-full">
-                  <h1 className="px-3 text-nowrap text-3xl h-auto">
+            <div className="flex flex-col w-fit py-6">
+               <div className="flex flex-col text-center border-l-2 rounded-tr-[12px] rounded-br-[12px] p-4 text-white h-full">
+                  <h1 className="px-3 text-nowrap text-3xl h-auto border-b-1 border-destructive-foreground pb-2 ">
                      DXC Details
                   </h1>
-                  <div className="grid grid-cols-3 grid-rows-2 gap-3 py-4 px-4 h-full">
+                  <div className="grid grid-cols-2  grid-rows-3 gap-4 py-4 px-4 h-full mt-3 [@media(min-width:970px)]:grid-cols-3">
                      <div className="text-nowrap">
                         <h1 className="bg-primary border-t-1 border-r-1 border-l-1 border-primary px-3 py-1">
                            People Manager
@@ -78,6 +78,30 @@ const PersonalInfo = () => {
                         </h1>
                         <h2 className="border-l-1 border-b-1 border-r-1 text-accent-foreground border-accent px-3 py-1">
                            231
+                        </h2>
+                     </div>
+                     <div className="text-nowrap">
+                        <h1 className="bg-primary border-t-1 border-r-1 border-l-1 border-primary px-3 py-1">
+                           Assignment Manager
+                        </h1>
+                        <h2 className="border-l-1 border-b-1 border-r-1 text-accent-foreground border-accent px-3 py-1">
+                           Donna Neil
+                        </h2>
+                     </div>
+                     <div className="text-nowrap">
+                        <h1 className="bg-primary border-t-1 border-r-1 border-l-1 border-primary px-3 py-1">
+                           Account
+                        </h1>
+                        <h2 className="border-l-1 border-b-1 border-r-1 text-accent-foreground border-accent px-3 py-1">
+                           DCC
+                        </h2>
+                     </div>
+                     <div className="text-nowrap">
+                        <h1 className="bg-primary border-t-1 border-r-1 border-l-1 border-primary px-3 py-1">
+                           WBS Code
+                        </h1>
+                        <h2 className="border-l-1 border-b-1 border-r-1 text-accent-foreground border-accent px-3 py-1">
+                           whduwahduwahduaw
                         </h2>
                      </div>
                   </div>
